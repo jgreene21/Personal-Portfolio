@@ -1,8 +1,12 @@
 import React from "react";
-import { Segment, Image } from "semantic-ui-react";
+import { Segment, Image, Button } from "semantic-ui-react";
 import AboutHeader from "../images/About Header.svg";
 import Footer from "./Footer";
-import yellowbutton from "../images/yellowbutton.svg";
+import YellowButton from "../images/yellowbutton.svg";
+import GreenButton from "../images/greenbutton.svg";
+import PinkButton from "../images/PinkButton.svg";
+import PurpleButton from "../images/PurpleButton.svg";
+import OrangeButton from "../images/orangebutton.svg";
 
 const About = () => (
   <>
@@ -37,7 +41,7 @@ const About = () => (
       }}
       inverted
     >
-      <a href="https://devpoint-labs-store-2020.herokuapp.com/"><Image src={yellowbutton} centered className="hvr-grow-shadow"/></a>
+      <a href="https://devpoint-labs-store-2020.herokuapp.com/"><Image src={YellowButton} centered className="hvr-grow-shadow"/></a>
     </Segment>
     <Segment
       style={{
@@ -48,7 +52,9 @@ const About = () => (
         borderRadius: "0%",
       }}
       inverted
-    ></Segment>
+    >
+     <Image src={GreenButton} centered className="hvr-grow-shadow"/>
+      </Segment>
     <Segment
       style={{
         height: "500px",
@@ -58,7 +64,9 @@ const About = () => (
         borderRadius: "0%",
       }}
       inverted
-    ></Segment>
+    >
+      <Image src={PurpleButton} centered className="hvr-grow-shadow"/>
+    </Segment>
     <Segment
       style={{
         height: "500px",
@@ -68,7 +76,9 @@ const About = () => (
         borderRadius: "0%",
       }}
       inverted
-    ></Segment>
+    >
+      <Image src={OrangeButton} centered className="hvr-grow-shadow"/>
+    </Segment>
     <Segment
       style={{
         height: "500px",
@@ -78,7 +88,7 @@ const About = () => (
         borderRadius: "0%",
       }}
       inverted
-    ></Segment>
+    ><Image src={PinkButton} centered className="hvr-grow-shadow"/></Segment>
     <Footer />
   </>
 );
