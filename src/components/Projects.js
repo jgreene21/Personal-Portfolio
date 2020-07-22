@@ -4,11 +4,19 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import AboutHeader from "../images/AboutHeader.svg";
 import Footer from "./Footer";
-import YellowButton from "../images/yellowbutton.svg";
-import GreenButton from "../images/greenbutton.svg";
+import YellowButton from "../images/YellowButton.svg";
+import GreenButton from "../images/GreenButton.svg";
 import PinkButton from "../images/PinkButton.svg";
 import PurpleButton from "../images/PurpleButton.svg";
 import OrangeButton from "../images/orangebutton.svg";
+import BPS from "../images/BPS.svg";
+import BPS2 from "../images/BPS2.svg";
+import BPS3 from "../images/BPS3.svg";
+import BPS4 from "../images/BPS4.svg";
+import DPS from "../images/DPS.svg";
+import DPS2 from "../images/DPS2.svg";
+import Pic from "../images/Pic.svg";
+import Pic2 from "../images/Pic2.svg";
 
 const Projects = () => (
   <>
@@ -64,17 +72,14 @@ const Projects = () => (
       }}
       inverted
     >
-      <ProjectName >
-        Bright Pest Solutions
-      </ProjectName>
-      <SubTitle>
-        client build for local small business
-      </SubTitle>
-      <div
-        style={{ marginTop: "50px", marginBottom: "50px", textAlign: "center" }}
-      >
-        <Icon name="plus" size="large" style={{ color: "#706B6B" }}/>
+      <div style={{ textAlign: "center" }}>
+        <Image.Group>
+          <Image src={BPS} />
+          <Image src={BPS2} />
+        </Image.Group>
       </div>
+      <ProjectName>Bright Pest Solutions</ProjectName>
+      <SubTitle>client build for local small business</SubTitle>
       <a href="https://devpoint-labs-store-2020.herokuapp.com/">
         <Image src={YellowButton} centered className="hvr-grow-shadow" />
       </a>
@@ -89,13 +94,14 @@ const Projects = () => (
       }}
       inverted
     >
+      <div style={{ textAlign: "center" }}>
+        <Image.Group>
+          <ImageContainer as={Image} src={DPS} />
+          <Image src={DPS2} />
+        </Image.Group>
+      </div>
       <ProjectName>DevPoint Store</ProjectName>
       <SubTitle>e-commerce site</SubTitle>
-      <div
-        style={{ marginTop: "50px", marginBottom: "50px", textAlign: "center" }}
-      >
-        <Icon name="plus" size="large" style={{ color: "#706B6B" }}/>
-      </div>
       <Image src={GreenButton} centered className="hvr-grow-shadow" />
     </Segment>
     <Segment
@@ -110,11 +116,6 @@ const Projects = () => (
     >
       <ProjectName>Covid-19 Symptom Tracker</ProjectName>
       <SubTitle>informational public health site</SubTitle>
-      <div
-        style={{ marginTop: "50px", marginBottom: "50px", textAlign: "center" }}
-      >
-        <Icon name="plus" size="large" style={{ color: "#706B6B" }}/>
-      </div>
       <Image src={PurpleButton} centered className="hvr-grow-shadow" />
     </Segment>
     <Segment
@@ -127,13 +128,14 @@ const Projects = () => (
       }}
       inverted
     >
+      <div style={{ textAlign: "center" }}>
+        <Image.Group>
+          <Image src={Pic} />
+          <Image src={Pic2} />
+        </Image.Group>
+      </div>
       <ProjectName>Pictionary</ProjectName>
       <SubTitle>interactive web application game</SubTitle>
-      <div
-        style={{ marginTop: "50px", marginBottom: "50px", textAlign: "center" }}
-      >
-        <Icon name="plus" size="large" style={{ color: "#706B6B" }}/>
-      </div>
       <Image src={OrangeButton} centered className="hvr-grow-shadow" />
     </Segment>
     <Segment
@@ -148,11 +150,6 @@ const Projects = () => (
     >
       <ProjectName>Rock Paper Scissors</ProjectName>
       <SubTitle>interactive web application game</SubTitle>
-      <div
-        style={{ marginTop: "50px", marginBottom: "50px", textAlign: "center" }}
-      >
-        <Icon name="plus" size="large" style={{ color: "#706B6B" }}/>
-      </div>
       <Image src={PinkButton} centered className="hvr-grow-shadow" />
     </Segment>
     <Footer />
@@ -168,7 +165,7 @@ const Contact = styled.p`
     line-height: 30px;
     color: #706b6b;
     text-align: center;
-    @media (max-width: 900px) {
+    @media (max-width: 700px) {
       font-size: 17px;
     }
   }
@@ -208,8 +205,9 @@ const ProjectName = styled.p`
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #706B6B;
+    color: #706b6b;
     mix-blend-mode: normal;
+    margin-top: 20px;
     @media (max-width: 700px) {
       font-size: 20px;
     }
@@ -225,9 +223,18 @@ const SubTitle = styled.p`
     line-height: 27px;
     text-align: center;
     text-transform: lowercase;
-    color: #706B6B;
+    color: #706b6b;
     @media (max-width: 700px) {
       font-size: 16px;
+    }
+  }
+`;
+
+const ImageContainer = styled.div`
+   {
+    size="medium"
+    @media (max-width: 550px) {
+      size="small"
     }
   }
 `;
