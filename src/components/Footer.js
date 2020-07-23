@@ -67,7 +67,7 @@ const StyledHeader = styled.p`{
   line-height: 29px;
   text-align: center;
   color: #d573c5;
-  @media(max-width: 700px) {
+  @media(max-width: 900px) {
     font-size: 22px
     }
 }
@@ -81,7 +81,7 @@ const Contact = styled.p`{
   color: #706b6b;
   text-align: center;
   @media(max-width: 700px) {
-    font-size: 14px;
+    font-size: 17px;
     }
 }
 `

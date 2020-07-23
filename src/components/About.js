@@ -48,7 +48,7 @@ const About = () => (
         </IntroItems>
       </Grid.Column>
       <Grid.Column width={4}>
-        <ImageHolder2 as={Image} src={Designer}/>
+        <ImageHolder2 as={Image} src={Designer} className="animate__animated animate__fadeInRightBig"/>
       </Grid.Column>
     </Grid>
     <Grid
@@ -104,7 +104,7 @@ const About = () => (
 const NavItems = styled.div`
    {
     margin-right: 30px;
-    font-size: 14px;
+    font-size: 16px;
     @media (max-width: 700px) {
       font-size: 12px;
       margin-right: 10px;
@@ -161,7 +161,7 @@ const Position = styled.div`
     top: 40px;
     @media (max-width: 1000px) {
       position: absolute;
-      right: 40px;
+      right: 0px;
       top: 10px;
     }
   }
@@ -224,7 +224,6 @@ const style = {
     fontStyle: "normal",
     fontWeight: "500",
     color: "#706B6B",
-    textShadow: "2px 4px 6px rgba(0, 0, 0, 0.25)",
   },
 };
 

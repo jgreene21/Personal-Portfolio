@@ -1,5 +1,5 @@
 import React from "react";
-import { Segment, Image, Icon, Menu } from "semantic-ui-react";
+import { Segment, Image, Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import AboutHeader from "../images/AboutHeader.svg";
@@ -8,11 +8,9 @@ import YellowButton from "../images/YellowButton.svg";
 import GreenButton from "../images/GreenButton.svg";
 import PinkButton from "../images/PinkButton.svg";
 import PurpleButton from "../images/PurpleButton.svg";
-import OrangeButton from "../images/orangebutton.svg";
+import OrangeButton from "../images/OrangeButton.svg";
 import BPS from "../images/BPS.svg";
 import BPS2 from "../images/BPS2.svg";
-import BPS3 from "../images/BPS3.svg";
-import BPS4 from "../images/BPS4.svg";
 import DPS from "../images/DPS.svg";
 import DPS2 from "../images/DPS2.svg";
 import Pic from "../images/Pic.svg";
@@ -62,11 +60,8 @@ const Projects = () => (
         repository.
       </Contact>
     </div>
-    <Segment
+    <StyledSegment as={Segment}
       style={{
-        height: "500px",
-        marginTop: "-14px",
-        borderRadius: "0%",
         background:
           "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #f8ee94",
       }}
@@ -80,51 +75,41 @@ const Projects = () => (
       </div>
       <ProjectName>Bright Pest Solutions</ProjectName>
       <SubTitle>client build for local small business</SubTitle>
-      <a href="https://devpoint-labs-store-2020.herokuapp.com/">
         <Image src={YellowButton} centered className="hvr-grow-shadow" />
-      </a>
-    </Segment>
-    <Segment
+    </StyledSegment>
+    <StyledSegment as={Segment}
       style={{
-        height: "500px",
         background:
           "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #6CC8A1",
-        marginTop: "-14px",
-        borderRadius: "0%",
       }}
       inverted
     >
-      <div style={{ textAlign: "center" }}>
+      <div style={{textAlign: "center"}}>
         <Image.Group>
-          <ImageContainer as={Image} src={DPS} />
+          <Image src={DPS} />
           <Image src={DPS2} />
         </Image.Group>
       </div>
       <ProjectName>DevPoint Store</ProjectName>
       <SubTitle>e-commerce site</SubTitle>
-      <Image src={GreenButton} centered className="hvr-grow-shadow" />
-    </Segment>
-    <Segment
+      <a href="https://devpoint-labs-store-2020.herokuapp.com/">
+      <Image src={GreenButton} centered className="hvr-grow-shadow" /></a>
+    </StyledSegment>
+    <StyledSegment as={Segment}
       style={{
-        height: "500px",
         background:
           "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #A74AF0",
-        marginTop: "-14px",
-        borderRadius: "0%",
       }}
       inverted
     >
       <ProjectName>Covid-19 Symptom Tracker</ProjectName>
       <SubTitle>informational public health site</SubTitle>
       <Image src={PurpleButton} centered className="hvr-grow-shadow" />
-    </Segment>
-    <Segment
+    </StyledSegment>
+    <StyledSegment as={Segment}
       style={{
-        height: "500px",
         background:
           "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #FD983A",
-        marginTop: "-14px",
-        borderRadius: "0%",
       }}
       inverted
     >
@@ -137,21 +122,18 @@ const Projects = () => (
       <ProjectName>Pictionary</ProjectName>
       <SubTitle>interactive web application game</SubTitle>
       <Image src={OrangeButton} centered className="hvr-grow-shadow" />
-    </Segment>
-    <Segment
+    </StyledSegment>
+    <StyledSegment as={Segment}
       style={{
-        height: "500px",
         background:
           "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #D573C5",
-        marginTop: "-14px",
-        borderRadius: "0%",
       }}
       inverted
     >
       <ProjectName>Rock Paper Scissors</ProjectName>
       <SubTitle>interactive web application game</SubTitle>
       <Image src={PinkButton} centered className="hvr-grow-shadow" />
-    </Segment>
+    </StyledSegment>
     <Footer />
   </>
 );
@@ -174,7 +156,7 @@ const Contact = styled.p`
 const NavItems = styled.div`
    {
     margin-right: 30px;
-    font-size: 14px;
+    font-size: 16px;
     @media (max-width: 700px) {
       font-size: 12px;
       margin-right: 10px;
@@ -189,7 +171,7 @@ const Position = styled.div`
     top: 40px;
     @media (max-width: 1000px) {
       position: absolute;
-      right: 40px;
+      right: 0px;
       top: 10px;
     }
   }
@@ -201,7 +183,7 @@ const ProjectName = styled.p`
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 20px;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -220,7 +202,6 @@ const SubTitle = styled.p`
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
     text-align: center;
     text-transform: lowercase;
     color: #706b6b;
@@ -230,11 +211,13 @@ const SubTitle = styled.p`
   }
 `;
 
-const ImageContainer = styled.div`
+const StyledSegment = styled.div`
    {
-    size="medium"
-    @media (max-width: 550px) {
-      size="small"
+    height: 500px;
+    margin-top: -14px !important;
+    border-radius: 0% !important;
+    @media (max-width: 800px) {
+      height: 760px !important; 
     }
   }
 `;
@@ -245,7 +228,6 @@ const style = {
     fontStyle: "normal",
     fontWeight: "500",
     color: "#706B6B",
-    textShadow: "2px 4px 6px rgba(0, 0, 0, 0.25)",
   },
 };
 

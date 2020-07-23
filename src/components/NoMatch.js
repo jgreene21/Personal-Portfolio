@@ -2,17 +2,17 @@ import React from "react";
 import { Image, Segment } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import HomeButton from "../images/HomeButton.svg";
+import HomeButton from "../images/NoMatchButton.svg";
 import NoMatchHeader from "../images/NoMatchHeader.svg";
 
 const NoMatch = () => (
   <>
     <Image src={NoMatchHeader} fluid />
-    <div style={{ marginTop: "75px", textAlign: "center", marginBottom: "170px" }}>
+    <StickyFooter style={{ textAlign: "center" }}>
       <Link to="/" className="hvr-grow-shadow">
         <Image src={HomeButton} centered className="hvr-grow-shadow" />
       </Link>
-    </div>
+    </StickyFooter>
     <Segment inverted className="footer">
       <Links style={{ marginTop: "40px" }}>
         <a
@@ -64,6 +64,15 @@ const Links = styled.p`
       font-size: 12px;
     }
   }
+`;
+
+const StickyFooter = styled.div`{
+  margin-top: 75px;
+  margin-bottom: 170px;
+  @media (max-width: 985px) {
+    margin-bottom: 342px; 
+  }
+}
 `;
 
 export default NoMatch;
