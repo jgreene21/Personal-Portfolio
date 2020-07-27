@@ -1,3 +1,23 @@
+.menu-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nav-area {
+  width: 100%;
+  transition: top .6s;
+  overflow: hidden;
+}
+
+.nav-area.animate {
+  top: -71px;
+}
+
+.nav-area.sticky {
+  top: 0;
+  z-index: 99;
+}
+
 .description {
   font-family: Montserrat;
   font-style: normal;

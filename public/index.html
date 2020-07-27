@@ -33,7 +33,33 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    
+    <script>
+      $(function(){
+
+        var scroll= $(document).scrollTop();
+        var navHeight= $('nav-area').outerHeight();
+
+        $(window).scroll(function(){
+
+          var scrolled= $(document).scrollTop();
+
+          if (scrolled > navHeight){
+            $('nav-area').addClass('animate');
+          }else{
+            $('nav-area').removeClass('animate');
+          }
+          if (scrolled > scroll){
+            $('nav-area').removeClass('sticky');
+          }else{
+            $('nav-area').addClass('sticky');
+          }
+
+          scroll= $(document).scrollTop();
+        })
+      })
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
