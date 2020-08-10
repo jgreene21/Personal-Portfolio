@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Segment } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import NoMatchHeader from "../images/NoMatchHeader.svg";
@@ -24,19 +24,6 @@ const NoMatch = () => (
     <Footer />
   </>
 );
-
-const Links = styled.p`
-   {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    @media (max-width: 700px) {
-      font-size: 12px;
-    }
-  }
-`;
 
 const MessageContainer = styled.div `
 {

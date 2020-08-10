@@ -12,7 +12,7 @@ import Footer from "./Footer";
 class About extends React.Component {
   state = {};
 
-  hideFixedMenu = () => this.setState({ fixed: true });
+  hideFixedMenu = () => this.setState({ fixed: false });
   showFixedMenu = () => this.setState({ fixed: true });
 
   render() {
@@ -29,7 +29,6 @@ class About extends React.Component {
             <Image src={Homepage} fluid />
             <Menu
               borderless
-              style={{ border: "none", boxShadow: "none" }}
               fixed={fixed ? "top" : null}
               style={{ border: "none", boxShadow: "none", padding: "15px" }}
             >
@@ -61,7 +60,7 @@ class About extends React.Component {
             <DesignerText>I'm a Designer</DesignerText>
             <IntroItems>
               I focus on clean and simple design that aid in user experience not
-              distract from it. I love color.
+              distract from it. I love using color to convey the right mood and emotion.
             </IntroItems>
           </Grid.Column>
           <Grid.Column width={4}>
@@ -84,7 +83,7 @@ class About extends React.Component {
             <DeveloperText>I'm a Developer</DeveloperText>
             <IntroItems>
               I can bring the design from the page to your site utilizing latest
-              technologies to run across various devices.
+              technologies to run across various devices to create an immersive digital experience.
             </IntroItems>
           </Grid.Column>
         </Grid>

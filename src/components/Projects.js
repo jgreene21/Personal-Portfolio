@@ -12,11 +12,12 @@ import OrangeButton from "../images/OrangeButton.svg";
 import BrightPestSolution from "../images/BrightPestSolutions.svg";
 import DevPointStore from "../images/DevPointStore.svg";
 import Pictionary from "../images/Pictionary.svg";
+import Rake from "../images/Rake.svg";
 
 class Projects extends React.Component {
   state = {};
 
-  hideFixedMenu = () => this.setState({ fixed: true });
+  hideFixedMenu = () => this.setState({ fixed: false });
   showFixedMenu = () => this.setState({ fixed: true });
 
   render() {
@@ -31,7 +32,7 @@ class Projects extends React.Component {
         >
           <div className="menu-container">
             <Image src={AboutHeader} fluid />
-            <Menu borderless style={{ border: "none", boxShadow: "none" }}
+            <Menu borderless
             fixed={fixed ? "top" : null}
             style={{ border: "none", boxShadow: "none", padding: "15px" }}>
               <Position as={Menu.Menu} position="right">
@@ -83,7 +84,7 @@ class Projects extends React.Component {
           }}
           inverted
         >
-          <Image src={BrightPestSolution} centered />
+            <Image src={BrightPestSolution} centered />
           <ProjectName style={{ color: "#706B6B" }}>
             Bright Pest Solutions
           </ProjectName>
@@ -140,8 +141,9 @@ class Projects extends React.Component {
           }}
           inverted
         >
-          <ProjectName>Rock Paper Scissors</ProjectName>
-          <SubTitle>interactive web application game</SubTitle>
+          <Image src={Rake} size="huge" centered />
+          <ProjectName>Rake Salon</ProjectName>
+          <SubTitle>web design package for salon</SubTitle>
           <Image src={PinkButton} centered className="hvr-grow-shadow" />
         </StyledSegment>
         <Footer />
@@ -250,11 +252,20 @@ const SubTitle = styled.p`
 
 const StyledSegment = styled.div`
    {
-    height: 580px;
+    height: 675px;
     margin-top: -14px !important;
     border-radius: 0% !important;
     @media (max-width: 800px) {
-      height: 425px !important;
+      height: 640px !important;
+    }
+    @media (max-width: 700px) {
+      height: 600px !important;
+    }
+    @media (max-width: 625px) {
+      height: 500px !important;
+    }
+    @media (max-width: 500px) {
+      height: 480px !important;
     }
   }
 `;
