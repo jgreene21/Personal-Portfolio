@@ -8,11 +8,11 @@ import YellowButton from "../images/YellowButton.svg";
 import GreenButton from "../images/GreenButton.svg";
 import PinkButton from "../images/PinkButton.svg";
 import PurpleButton from "../images/PurpleButton.svg";
-import OrangeButton from "../images/OrangeButton.svg";
 import BrightPestSolution from "../images/BrightPestSolutions.svg";
-import DevPointStore from "../images/DevPointStore.svg";
-import Pictionary from "../images/Pictionary.svg";
+import DevPointStore from "../images/DevPoint.svg";
 import Rake from "../images/Rake.svg";
+import DreamHome from "../images/Realtor.svg";
+import Resume from "../images/Resume.pdf";
 
 class Projects extends React.Component {
   state = {};
@@ -54,6 +54,14 @@ class Projects extends React.Component {
                     Contact
                   </NavItems>
                 </a>
+                <a
+                  className="hvr-grow-shadow"
+                  href={Resume}
+                >
+                  <NavItems as={Menu.Item} style={style.menu}>
+                    Resume
+                  </NavItems>
+                </a>
               </Position>
             </Menu>
           </div>
@@ -84,7 +92,7 @@ class Projects extends React.Component {
           }}
           inverted
         >
-            <Image src={BrightPestSolution} centered />
+            <Image src={BrightPestSolution} size="huge" centered />
           <ProjectName style={{ color: "#706B6B" }}>
             Bright Pest Solutions
           </ProjectName>
@@ -97,24 +105,24 @@ class Projects extends React.Component {
           as={Segment}
           style={{
             background:
-              "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #FD983A",
+              "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #D573C5",
           }}
           inverted
         >
-          <Image src={Pictionary} centered />
-          <ProjectName>Pictionary</ProjectName>
-          <SubTitle>interactive web application game</SubTitle>
-          <Image src={OrangeButton} centered className="hvr-grow-shadow" />
+          <Image src={Rake} size="huge" centered />
+          <ProjectName>Rake Salon</ProjectName>
+          <SubTitle>web design package for salon</SubTitle>
+          <Image src={PinkButton} centered className="hvr-grow-shadow" />
         </StyledSegment>
         <StyledSegment
           as={Segment}
           style={{
             background:
-              "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #6CC8A1",
+              "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #FD983A",
           }}
           inverted
         >
-          <Image src={DevPointStore} centered />
+          <Image src={DevPointStore} size="huge" centered />
           <ProjectName>DevPoint Store</ProjectName>
           <SubTitle>e-commerce site</SubTitle>
           <a href="https://devpoint-labs-store-2020.herokuapp.com/">
@@ -129,22 +137,10 @@ class Projects extends React.Component {
           }}
           inverted
         >
-          <ProjectName>Covid-19 Symptom Tracker</ProjectName>
-          <SubTitle>informational public health site</SubTitle>
+          <Image src={DreamHome} size="huge" centered />
+          <ProjectName>Dream Home</ProjectName>
+          <SubTitle>web design package for realtor</SubTitle>
           <Image src={PurpleButton} centered className="hvr-grow-shadow" />
-        </StyledSegment>
-        <StyledSegment
-          as={Segment}
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #D573C5",
-          }}
-          inverted
-        >
-          <Image src={Rake} size="huge" centered />
-          <ProjectName>Rake Salon</ProjectName>
-          <SubTitle>web design package for salon</SubTitle>
-          <Image src={PinkButton} centered className="hvr-grow-shadow" />
         </StyledSegment>
         <Footer />
       </>
@@ -194,11 +190,9 @@ const Contact = styled.p`
 
 const NavItems = styled.div`
    {
-    margin-right: 30px;
     font-size: 16px;
     @media (max-width: 700px) {
-      font-size: 12px;
-      margin-right: 10px;
+      font-size: 10px;
     }
   }
 `;
@@ -206,7 +200,7 @@ const NavItems = styled.div`
 const Position = styled.div`
    {
     position: absolute;
-    right: 140px;
+    right: 80px;
     top: 0px;
     @media (max-width: 1000px) {
       position: absolute;
@@ -261,7 +255,7 @@ const StyledSegment = styled.div`
     @media (max-width: 700px) {
       height: 600px !important;
     }
-    @media (max-width: 625px) {
+    @media (max-width: 600px) {
       height: 500px !important;
     }
     @media (max-width: 500px) {

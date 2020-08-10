@@ -3,11 +3,12 @@ import { Image, Grid, Menu, Visibility } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Homepage from "../images/HomepageHeader.svg";
-import Designer from "../images/Designer1.svg";
-import Developer from "../images/Developer1.svg";
+import Designer from "../images/Designer.svg";
+import Developer from "../images/Developer.svg";
 import Woman from "../images/Woman.svg";
-import Mother from "../images/Mother1.svg";
+import Mother from "../images/Mother.svg";
 import Footer from "./Footer";
+import Resume from "../images/Resume.pdf";
 
 class About extends React.Component {
   state = {};
@@ -51,6 +52,14 @@ class About extends React.Component {
                     Contact
                   </NavItems>
                 </a>
+                <a
+                  className="hvr-grow-shadow"
+                  href={Resume}
+                >
+                  <NavItems as={Menu.Item} style={style.menu}>
+                    Resume
+                  </NavItems>
+                </a>
               </Position>
             </Menu>
           </div>
@@ -66,7 +75,7 @@ class About extends React.Component {
           <Grid.Column width={4}>
             <ImageHolder2
               as={Image}
-              src={Designer}
+              src={Designer} 
               className="animate__animated animate__fadeInRightBig"
             />
           </Grid.Column>
@@ -108,6 +117,7 @@ class About extends React.Component {
             <ImageHolder1
               as={Image}
               src={Mother}
+
               className="animate__animated animate__fadeInLeftBig"
             />
           </Grid.Column>
@@ -120,6 +130,7 @@ class About extends React.Component {
             </IntroItems>
           </Grid.Column>
         </IntroHolder>
+        
         <Footer />
       </>
     );
@@ -128,11 +139,9 @@ class About extends React.Component {
 
 const NavItems = styled.div`
    {
-    margin-right: 30px;
     font-size: 16px;
     @media (max-width: 700px) {
       font-size: 12px;
-      margin-right: 10px;
     }
   }
 `;
@@ -185,7 +194,7 @@ const ImageHolder2 = styled.div`
 const Position = styled.div`
    {
     position: absolute;
-    right: 140px;
+    right: 80px;
     top: 0px;
     @media (max-width: 1000px) {
       position: absolute;

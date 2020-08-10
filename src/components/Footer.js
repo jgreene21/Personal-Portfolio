@@ -2,11 +2,14 @@ import React from "react";
 import { Segment, Image } from "semantic-ui-react";
 import Message from "../images/Message.svg";
 import styled from 'styled-components';
+import ViewResume from "../images/ViewResume.svg";
+import Resume from "../images/Resume.pdf";
 
 const Footer = () => (
   <>
     <FooterContainer>
       <StyledFooter>Lets Work Together!</StyledFooter>
+      <Yeah>Yeah, Yeah, Yeah</Yeah>
       <Contact>Currently looking for a great place and team to start 
         <br/>my journey in design and development. Also 
         <br/>available for freelance work. Would love to hear from you.</Contact>
@@ -14,8 +17,13 @@ const Footer = () => (
       <a 
       className="hvr-grow-shadow"
       href="mailto:julesgreene.slc@gmail.com">
-        <Image src={Message} centered />
+        <Image src={Message} centered style={{padding: "10px"}}/>
       </a>
+      <a 
+      className="hvr-grow-shadow"
+        href={Resume}>
+          <Image src={ViewResume} centered style={{padding: "10px"}}/> 
+        </a>
       </FooterContainer>
 <Segment inverted className="footer">
 <Links style={{marginTop: "40px"}}>
@@ -79,6 +87,19 @@ const StyledFooter = styled.p`{
   color: #d573c5;
   @media(max-width: 700px) {
     font-size: 22px
+    }
+}
+`
+const Yeah = styled.p`{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: -15px;
+  text-align: center;
+  color: #d573c5;
+  @media(max-width: 700px) {
+    font-size: 18px
     }
 }
 `
