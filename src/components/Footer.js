@@ -9,7 +9,7 @@ const Footer = () => (
   <>
     <FooterContainer>
       <StyledFooter>Lets Work Together!</StyledFooter>
-      <Yeah>Yeah, Yeah, Yeah</Yeah>
+      <Yeah className="animate__animated animate__tada animate__slower animate__repeat-2">Yeah, Yeah, Yeah</Yeah>
       <Contact>Currently looking for a great place and team to start 
         <br/>my journey in design and development. Also 
         <br/>available for freelance work. Would love to hear from you.</Contact>
