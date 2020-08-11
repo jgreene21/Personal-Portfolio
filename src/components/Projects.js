@@ -34,7 +34,7 @@ class Projects extends React.Component {
             <Image src={AboutHeader} fluid />
             <Menu borderless
             fixed={fixed ? "top" : null}
-            style={{ border: "none", boxShadow: "none", padding: "15px" }}>
+            style={{ border: "none", boxShadow: "none"}}>
               <Position as={Menu.Menu} position="right">
                 <Link to="/" className="hvr-grow-shadow">
                   <NavItems as={Menu.Item} style={style.menu}>
@@ -118,7 +118,7 @@ class Projects extends React.Component {
           as={Segment}
           style={{
             background:
-              "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #FD983A",
+              "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #6CC8A1",
           }}
           inverted
         >
