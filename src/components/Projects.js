@@ -12,7 +12,7 @@ import BrightPestSolution from "../images/BrightPestSolutions.svg";
 import DevPointStore from "../images/DevPoint.svg";
 import Rake from "../images/Rake.svg";
 import DreamHome from "../images/Realtor.svg";
-import Resume from "../images/Resume.pdf";
+import Resume from "../PDF/Resume.pdf";
 
 class Projects extends React.Component {
   state = {};
@@ -88,6 +88,19 @@ class Projects extends React.Component {
           as={Segment}
           style={{
             background:
+              "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #D573C5",
+          }}
+          inverted
+        >
+          <Image src={Rake} size="huge" centered />
+          <ProjectName>Rake Salon</ProjectName>
+          <SubTitle>web design package for salon</SubTitle>
+          <Image src={PinkButton} centered className="hvr-grow-shadow" />
+        </StyledSegment>
+        <StyledSegment
+          as={Segment}
+          style={{
+            background:
               "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #f8ee94",
           }}
           inverted
@@ -100,19 +113,6 @@ class Projects extends React.Component {
             client build for local small business
           </SubTitle>
           <Image src={YellowButton} centered className="hvr-grow-shadow" />
-        </StyledSegment>
-        <StyledSegment
-          as={Segment}
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), #D573C5",
-          }}
-          inverted
-        >
-          <Image src={Rake} size="huge" centered />
-          <ProjectName>Rake Salon</ProjectName>
-          <SubTitle>web design package for salon</SubTitle>
-          <Image src={PinkButton} centered className="hvr-grow-shadow" />
         </StyledSegment>
         <StyledSegment
           as={Segment}

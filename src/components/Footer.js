@@ -3,7 +3,7 @@ import { Segment, Image } from "semantic-ui-react";
 import Message from "../images/Message.svg";
 import styled from 'styled-components';
 import ViewResume from "../images/ViewResume.svg";
-import Resume from "../images/Resume.pdf";
+import Resume from "../PDF/Resume.pdf";
 
 const Footer = () => (
   <>

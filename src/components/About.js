@@ -8,7 +8,7 @@ import Developer from "../images/Developer.svg";
 import Woman from "../images/Woman.svg";
 import Mother from "../images/Mother.svg";
 import Footer from "./Footer";
-import Resume from "../images/Resume.pdf";
+import Resume from "../PDF/Resume.pdf";
 
 class About extends React.Component {
   state = {};
