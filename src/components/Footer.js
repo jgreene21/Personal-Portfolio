@@ -34,7 +34,7 @@ const Footer = () => (
   >
     Github
   </a>
-  <span style={{ marginLeft: "40px" }}>
+  <span>
     <a
       className="hvr-grow-shadow"
       style={{ color: "#d573c5" }}
@@ -43,7 +43,7 @@ const Footer = () => (
       Linkedin
     </a>
   </span>
-  <span style={{ marginLeft: "40px" }}>
+  <span>
     <a
       className="hvr-grow-shadow"
       style={{ color: "#d573c5" }}
@@ -52,7 +52,7 @@ const Footer = () => (
       Instagram
     </a>
   </span>
-  <span style={{ marginLeft: "40px" }}>
+  <span>
     <a
       className="hvr-grow-shadow"
       href="mailto:julesgreene.slc@gmail.com"
@@ -123,8 +123,14 @@ const Links = styled.p`{
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  padding: 20px
   @media(max-width: 700px) {
     font-size: 14px;
+    padding: 20px
+  }
+  @media(max-width: 400px) {
+    font-size: 12px;
+    padding: 10px
   }
 }
 `
