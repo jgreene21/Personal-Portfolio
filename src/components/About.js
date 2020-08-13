@@ -65,7 +65,7 @@ class About extends React.Component {
           </div>
         </Visibility>
         <Grid centered columns={2}>
-          <Grid.Column width={6}>
+          <Grid.Column mobile={9} tablet={7} computer={5}>
             <DesignerText>I'm a Designer</DesignerText>
             <IntroItems>
               I focus on clean and simple design that aid in user experience not
@@ -88,7 +88,7 @@ class About extends React.Component {
               className="animate__animated animate__fadeInLeftBig"
             />
           </Grid.Column>
-          <Grid.Column width={6}>
+          <Grid.Column mobile={9} tablet={7} computer={5}>
             <DeveloperText>I'm a Developer</DeveloperText>
             <IntroItems>
               I can bring the design from the page to your site utilizing latest
@@ -97,7 +97,7 @@ class About extends React.Component {
           </Grid.Column>
         </Grid>
         <Grid centered columns={2}>
-          <Grid.Column width={6}>
+          <Grid.Column mobile={9} tablet={7} computer={5}>
             <WomanText>I'm a Woman</WomanText>
             <IntroItems>
               I’m excited to join the ranks of women in tech and do my part to
@@ -121,7 +121,7 @@ class About extends React.Component {
               className="animate__animated animate__fadeInLeftBig"
             />
           </Grid.Column>
-          <Grid.Column width={6}>
+          <Grid.Column mobile={9} tablet={7} computer={5}>
             <MotherText>I'm a Mother</MotherText>
             <IntroItems>
               I’m a mother to four and have gone from knowing less about
@@ -160,6 +160,7 @@ const IntroItems = styled.div`
   }
 `;
 
+
 const IntroHolder = styled.div`
    {
     margin-top: 75px;
@@ -173,7 +174,10 @@ const IntroHolder = styled.div`
 
 const ImageHolder1 = styled.div`
    {
-    margin-left: 80px;
+    margin-left: 20%;
+    @media (max-width: 1200px) {
+      margin-left: 10%;
+    }
     @media (max-width: 850px) {
       margin-left: 0px;
       margin-top: 50px;
@@ -183,7 +187,10 @@ const ImageHolder1 = styled.div`
 
 const ImageHolder2 = styled.div`
    {
-    margin-left: 80px;
+    margin-left: 20%;
+    @media (max-width: 1200px) {
+      margin-left: 10%;
+    }
     @media (max-width: 850px) {
       margin-left: 0px;
       margin-top: 40px;

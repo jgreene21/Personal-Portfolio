@@ -32,7 +32,7 @@ const Footer = () => (
   >
     Github
   </a>
-  <span>
+  <span style={{marginLeft: "5vw"}}>
     <a
       className="hvr-grow-shadow"
       style={{ color: "#d573c5" }}
@@ -41,7 +41,7 @@ const Footer = () => (
       Linkedin
     </a>
   </span>
-  <span>
+  <span style={{marginLeft: "5vw"}}>
     <a
       className="hvr-grow-shadow"
       style={{ color: "#d573c5" }}
@@ -49,8 +49,8 @@ const Footer = () => (
     >
       Instagram
     </a>
-  </span>
-  <span>
+  </span >
+  <span style={{marginLeft: "5vw"}}>
     <a
       className="hvr-grow-shadow"
       href="mailto:julesgreene.slc@gmail.com"
@@ -108,28 +108,30 @@ const Contact = styled.p`{
   font-size: 20px;
   line-height: 30px;
   color: #706b6b;
-  text-align: center;
-  margin-left: 
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
   @media(max-width: 700px) {
     font-size: 15px;
+    width: 420px;
     }
+    @media(max-width: 475px) {
+      font-size: 15px;
+      width: 400px;
+      }
 }
 `
-
 const Links = styled.p`{
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  padding: 20px
   @media(max-width: 700px) {
     font-size: 14px;
-    padding: 20px
   }
   @media(max-width: 400px) {
     font-size: 12px;
-    padding: 10px
   }
 }
 `

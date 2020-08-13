@@ -69,9 +69,7 @@ class Projects extends React.Component {
         <HeaderContainer>
           <StyledHeader>What I've Been Up To</StyledHeader>
           <Contact>
-            Here is a selection of some of my first projects.
-            <br />
-            For more of my work visit my
+            Here is a selection of some of my first projects. For more of my work visit my
             <span style={{ padding: "5px" }}>
               <a
                 className="hvr-grow-shadow"
@@ -181,9 +179,17 @@ const Contact = styled.p`
     font-size: 20px;
     line-height: 30px;
     color: #706b6b;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
     @media (max-width: 700px) {
       font-size: 15px;
+      width: 420px;
+        }
+        @media(max-width: 475px) {
+          font-size: 15px;
+          width: 400px;
+          }
     }
   }
 `;
