@@ -10,9 +10,7 @@ const Footer = () => (
     <FooterContainer>
       <StyledFooter>Lets Work Together!</StyledFooter>
       <Yeah className="animate__animated animate__tada animate__slower">Yeah, Yeah, Yeah</Yeah>
-      <Contact>Currently looking for a great place and team to start 
-        <br/>my journey in design and development. Also 
-        <br/>available for freelance work. Would love to hear from you.</Contact>
+      <Contact>Currently looking for a great place and team to start my journey in design and development. Also available for freelance work. Would love to hear from you.</Contact>
       <br />
       <a 
       className="hvr-grow-shadow"
@@ -111,6 +109,7 @@ const Contact = styled.p`{
   line-height: 30px;
   color: #706b6b;
   text-align: center;
+  margin-left: 
   @media(max-width: 700px) {
     font-size: 15px;
     }
