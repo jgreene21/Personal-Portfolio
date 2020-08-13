@@ -103,7 +103,7 @@ class About extends React.Component {
             </IntroItems>
           </Grid.Column>
           <Grid.Column mobile={5} computer={4}>
-            <ImageHolder2
+            <ImageHolder3
               as={Image}
               src={Woman}
               className="animate__animated animate__fadeInRightBig"
@@ -179,6 +179,9 @@ const ImageHolder1 = styled.div`
       margin-left: 0px;
       margin-top: 50px;
     }
+    @media (max-width: 495px) {
+      margin-top: 60px
+    }
   }
 `;
 
@@ -192,8 +195,23 @@ const ImageHolder2 = styled.div`
       margin-left: 0px;
       margin-top: 40px;
     }
+    @media (max-width: 495px) {
+      margin-top: 50px
+    }
   }
 `;
+const ImageHolder3 = styled.div`
+   {
+    margin-left: 20%;
+    @media (max-width: 1200px) {
+      margin-left: 10%;
+    }
+    @media (max-width: 850px) {
+      margin-left: 0px;
+      margin-top: 40px;
+    }
+  }
+  `;
 
 const Position = styled.div`
    {
