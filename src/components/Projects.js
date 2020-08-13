@@ -262,10 +262,10 @@ const StyledSegment = styled.div`
       height: 600px !important;
     }
     @media (max-width: 600px) {
-      height: 500px !important;
-    }
-    @media (max-width: 500px) {
       height: 480px !important;
+    }
+    @media (max-width: 475px) {
+      height: 420px !important;
     }
   }
 `;
