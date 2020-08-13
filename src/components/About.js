@@ -68,8 +68,7 @@ class About extends React.Component {
           <Grid.Column mobile={9} tablet={7} computer={5}>
             <DesignerText>I'm a Designer</DesignerText>
             <IntroItems>
-              I focus on clean and simple design that aid in user experience not
-              distract from it. I love using color to convey the right mood and emotion.
+            Creative web designer and illustrator. Focusing on clean and simple design that aid in user experience without distracting from it. Passionate about creating the right emotion through color.
             </IntroItems>
           </Grid.Column>
           <Grid.Column mobile={5} computer={4}>
@@ -91,8 +90,7 @@ class About extends React.Component {
           <Grid.Column mobile={9} tablet={7} computer={5}>
             <DeveloperText>I'm a Developer</DeveloperText>
             <IntroItems>
-              I can bring the design from the page to your site utilizing latest
-              technologies to run across various devices to create an immersive digital experience.
+            Talented web developer utilizing the latest technologies to create engaging digital experiences that run across various devices. 
             </IntroItems>
           </Grid.Column>
         </Grid>
@@ -100,7 +98,7 @@ class About extends React.Component {
           <Grid.Column mobile={9} tablet={7} computer={5}>
             <WomanText>I'm a Woman</WomanText>
             <IntroItems>
-              I’m excited to join the ranks of women in tech and do my part to
+              Excited to join the ranks of women in tech and do my part to
               encourage and help women thrive in that world.
             </IntroItems>
           </Grid.Column>
@@ -117,15 +115,14 @@ class About extends React.Component {
             <ImageHolder1
               as={Image}
               src={Mother}
-
               className="animate__animated animate__fadeInLeftBig"
             />
           </Grid.Column>
           <Grid.Column mobile={9} tablet={7} computer={5}>
             <MotherText>I'm a Mother</MotherText>
             <IntroItems>
-              I’m a mother to four and have gone from knowing less about
-              computers than my two oldest sons to building websites. Now they
+              Mother to four who has gone from knowing less about
+              computers than her two oldest sons to building websites. Now they
               think mom is pretty cool!
             </IntroItems>
           </Grid.Column>
