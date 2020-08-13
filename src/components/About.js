@@ -72,7 +72,7 @@ class About extends React.Component {
               distract from it. I love using color to convey the right mood and emotion.
             </IntroItems>
           </Grid.Column>
-          <Grid.Column width={4}>
+          <Grid.Column mobile={5} computer={4}>
             <ImageHolder2
               as={Image}
               src={Designer} 
@@ -81,7 +81,7 @@ class About extends React.Component {
           </Grid.Column>
         </Grid>
         <Grid centered columns={2}>
-          <Grid.Column width={4}>
+          <Grid.Column mobile={5} computer={4}>
             <ImageHolder1
               as={Image}
               src={Developer}
@@ -104,7 +104,7 @@ class About extends React.Component {
               encourage and help women thrive in that world.
             </IntroItems>
           </Grid.Column>
-          <Grid.Column width={4}>
+          <Grid.Column mobile={5} computer={4}>
             <ImageHolder2
               as={Image}
               src={Woman}
@@ -113,7 +113,7 @@ class About extends React.Component {
           </Grid.Column>
         </Grid>
         <IntroHolder as={Grid} centered columns={2}>
-          <Grid.Column width={4}>
+          <Grid.Column mobile={5} computer={4}>
             <ImageHolder1
               as={Image}
               src={Mother}
@@ -141,7 +141,7 @@ const NavItems = styled.div`
    {
     font-size: 16px;
     @media (max-width: 700px) {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 `;
