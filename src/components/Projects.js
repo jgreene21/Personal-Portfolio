@@ -188,7 +188,7 @@ const Contact = styled.p`
         }
         @media(max-width: 475px) {
           font-size: 15px;
-          width: 400px;
+          width: 350px;
           }
     }
   }
