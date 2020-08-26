@@ -9,8 +9,8 @@ import ScrollToTop from "./components/ScrollToTop";
 const App = () => (
 
   <>
-  <ScrollToTop />
   <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <ScrollToTop />
     <Switch>
       <Route exact path="/" component={About} />
       <Route path="/projects" component={Projects} />
