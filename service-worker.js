@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://www.julie-greene.com/precache-manifest.5d9ca1324af31cbf745b3ca51ad6da97.js"
+  "https://www.julie-greene.com/precache-manifest.d3fe6b8610d3ac125e126c07bd48b753.js"
 );
 
 self.addEventListener('message', (event) => {
