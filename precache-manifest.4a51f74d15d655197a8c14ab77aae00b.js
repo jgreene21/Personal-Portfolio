@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49a1d4fe470f25921bc1ea0841f68b06",
+    "revision": "e5944453e3972db27480e6bd062ff4c1",
     "url": "https://www.julie-greene.com/index.html"
   },
   {
-    "revision": "2f8a7fbd3c36bd3e1e13",
+    "revision": "e29a5abbb05fe00379df",
     "url": "https://www.julie-greene.com/static/css/2.50bacee3.chunk.css"
   },
   {
-    "revision": "162485bc96e5cfa505da",
+    "revision": "a7efefa0413edc447558",
     "url": "https://www.julie-greene.com/static/css/main.2626d7ec.chunk.css"
   },
   {
-    "revision": "2f8a7fbd3c36bd3e1e13",
-    "url": "https://www.julie-greene.com/static/js/2.a003bf49.chunk.js"
+    "revision": "e29a5abbb05fe00379df",
+    "url": "https://www.julie-greene.com/static/js/2.3c1f118b.chunk.js"
   },
   {
     "revision": "4d47ffde3dc69784e8e23fd910817ef8",
-    "url": "https://www.julie-greene.com/static/js/2.a003bf49.chunk.js.LICENSE.txt"
+    "url": "https://www.julie-greene.com/static/js/2.3c1f118b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "162485bc96e5cfa505da",
-    "url": "https://www.julie-greene.com/static/js/main.9107964a.chunk.js"
+    "revision": "a7efefa0413edc447558",
+    "url": "https://www.julie-greene.com/static/js/main.a9ef7d03.chunk.js"
   },
   {
     "revision": "789a60a9e431db52929c",
