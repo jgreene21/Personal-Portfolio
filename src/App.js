@@ -10,7 +10,7 @@ const App = () => (
 
   <>
   <ScrollToTop />
-  <BrowserRouter basename={process.env.julie-greene.com}>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/" component={About} />
       <Route path="/projects" component={Projects} />
