@@ -11,9 +11,9 @@ const App = () => (
   <>
   <ScrollToTop />
     <Switch>
-      <Route exact path="/" component={About} />
+      <Route exact path= {process.env.PUBLIC_URL  + "/"} component={About} />
       <Route path= {process.env.PUBLIC_URL + "/projects"} component={Projects} />
-      <Route path = {process.env.PUBLIC_URL + component={NoMatch}} />
+      <Route path = {process.env.PUBLIC_URL} component={NoMatch} />
     </Switch>
   </>
 
