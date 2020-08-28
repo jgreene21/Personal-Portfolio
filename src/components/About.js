@@ -46,14 +46,6 @@ class About extends React.Component {
                 </Link>
                 <a
                   className="hvr-grow-shadow"
-                  href="mailto:julesgreene.slc@gmail.com"
-                >
-                  <NavItems as={Menu.Item} style={style.menu}>
-                    Contact
-                  </NavItems>
-                </a>
-                <a
-                  className="hvr-grow-shadow"
                   href={Resume}
                 >
                   <NavItems as={Menu.Item} style={style.menu}>

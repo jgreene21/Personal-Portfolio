@@ -1,22 +1,22 @@
 import React from "react";
-import { Segment, Image } from "semantic-ui-react";
+import { Segment, Image, Modal, Icon } from "semantic-ui-react";
 import Message from "../images/Message.svg";
 import styled from 'styled-components';
 import ViewResume from "../images/ViewResume.svg";
 import Resume from "../PDF/Resume.pdf";
+import MessageMe from "./MessageMe";
+import ContactForm from "./ContactForm";
 
-const Footer = () => (
+function Footer () {
+  const [open, setOpen] = React.useState(false)
+  return(
   <>
     <FooterContainer>
       <StyledFooter>Lets Work Together!</StyledFooter>
       <Yeah className="animate__animated animate__tada animate__slower">Yeah, Yeah, Yeah</Yeah>
       <Contact>Currently looking for a great place and team to start my journey in design and development. Also available for freelance work. Would love to hear from you.</Contact>
       <br />
-      <a 
-      className="hvr-grow-shadow"
-      href="mailto:julesgreene.slc@gmail.com">
-        <Image src={Message} centered style={{padding: "10px"}}/>
-      </a>
+        <MessageMe /> 
       <a 
       className="hvr-grow-shadow"
         href={Resume}>
@@ -51,17 +51,21 @@ const Footer = () => (
     </a>
   </span >
   <span style={{marginLeft: "5vw"}}>
-    <a
-      className="hvr-grow-shadow"
-      href="mailto:julesgreene.slc@gmail.com"
+  <Modal
+      closeIcon 
+      open={open}
+      onClose={() => setOpen(false)}
+      onOpen={() => setOpen(true)}
+      trigger={<p style={{cursor: "pointer", color: "#d573c5" }} className="hvr-grow-shadow"> Contact </p>}
     >
-      Contact
-    </a>
+      <ContactForm  />
+    </Modal>
   </span>
 </Links>
 </Segment>
 </>
-);
+)
+  };
 
 const FooterContainer = styled.div `
 {
