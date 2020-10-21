@@ -1,6 +1,5 @@
 import React from "react";
 import { Segment, Image, Modal, Icon } from "semantic-ui-react";
-import Message from "../images/Message.svg";
 import styled from 'styled-components';
 import ViewResume from "../images/ViewResume.svg";
 import Resume from "../PDF/Resume.pdf";
